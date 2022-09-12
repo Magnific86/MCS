@@ -1,5 +1,14 @@
 body {
     font-size: 18px;
+    background-origin:border-box;
+    background: linear-gradient(to right, #000, #666);
+    background: -webkit-linear-gradient(left, #000, #666);
+    background: -webkit-radial-gradient(200px 200px, circle closest-side, rgba(0, 0, 0, 0.308), rgb(255, 255, 255));
+    background: linear-gradient(red 0%, green 33.3%, blue 66.7%, black 100%);
+    background: linear-gradient(red, green, blue, black);
+    background: linear-gradient(135deg, hsl(36,100%,50%) 10%, hsl(72,100%,50%) 60%, white 90%);
+    background: repeating-linear-gradient(white, black 150px, white 300px);
+    background: repeating-radial-gradient(black, black 15px, white 15px, white 30px);
 }
 .page {
     width: 1000px;
@@ -9,7 +18,7 @@ body {
 h1, h2 {
     font-size: 2em;
     color: white;
-    background-color: black;
+    background: linear-gradient(yellow, red);
     border: 3px solid goldenrod;
     padding: 20px 0 20px 0;
     text-align: center;
@@ -21,7 +30,7 @@ h1 {
 h3 {
     font-size: 1.2em;
     font-weight: normal;
-    color: #7E8184;
+    color: wheat;
 }
 .chapterstyle:link,
 .chapterstyle:visited {
@@ -29,7 +38,6 @@ h3 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
     color: blue;
-    background-color: white;
     font-weight: bold;
     text-align: left;
     width: 1000px;
@@ -43,7 +51,7 @@ h3 {
     color: red;
 }
 .chapterstyle:visited {
-    color: purple;
+    color: white;
 }
 ul {
     list-style-type: circle;
