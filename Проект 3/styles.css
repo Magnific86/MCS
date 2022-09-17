@@ -1,3 +1,21 @@
-.div {
-    background-image: url('C:\Users\klevt\.vscode\MCS\Проект 3\image\101.jpg');
+.image {
+    background-image: url('img.png');
 } 
+.footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    height: 200px;
+    flex: 1;
+    background-color: #0b24fb;
+    border: 1px solid #fff;
+  }
+  .footer-one,
+  .footer-three {
+    flex: initial;
+    width: 300px;
+    background-color: #f1eeee;
+  }
+  
