@@ -1,5 +1,5 @@
 .image {
-    background-image: url('img.png');
+ background: url(driko.jpg);
 } 
 .footer {
     display: flex;
