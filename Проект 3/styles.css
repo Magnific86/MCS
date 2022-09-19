@@ -1,142 +1,32 @@
- .main {
-  height: 2427px;
-  width: 1440px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
-
- }
- .header-container {
-  height: 200px;
-  width: 1440px;
-  left: 0px;
-  bottom: 2227px;
-  top: 0px;
-  position: absolute;
-  border-radius: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.yellow {
   background: #E5E000;
  }
- .header {
-  position: absolute;
-  height: 40px;
-  width: 500px;
-  top: 80px;
-  left: 80px;
-  bottom: 80px;
-  border-radius: nullpx;
-  color: #fff;
-  font-family: Helvetica;
-  font-size: 50px;
-  line-height: 57px;
-  letter-spacing: 0em;
-  text-align: left;
- }
+ .header, .footer {
+  padding: 80px;
+}
  .img {
-  width: 1440px;
   height: 1080px;
-  position: absolute;
-  top: 200px;
-  bottom: 1147px;
-  left: 0px;
+  background-image: url('file:///C:/Users/klevt/.vscode/MCS/Проект%203/image/img.png');
+  background-size: cover;
  }
-.mini-footer {
-  position: absolute;
-  top: 1280px;
-  bottom: 1047px;
-  left: 0px;
-  width: 1440px;
-  height: 100px;
-  background: #E5E000;
+ .links {
+  padding: 35px 80px;
 }
-.foot {
-  font-family: Helvetica;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #fff;
-  margin: 36px 0 35px 80px;
+.links p {
+  color: #ffffff;
 }
-.land {
-  position: absolute;
-  width: 1280px;
-  height: 637px;
-  top: 1490px;
-  left: 80px;
-  right: 80px;
-  bottom: 100px;
-  font-family: 'Helvetica';
-  font-style: normal;
-  font-size: 50px;
-  color: #000000;
-  font-weight: 300;
-  line-height: 57px;
-  letter-spacing: 0em;
-  text-align: left;
+.about {
+  padding: 105px 80px;
 }
-.h1 {
-  font-weight: 700;
+.about h2 {
+  margin-bottom: 50px;
 }
-.footer-container {
-  height: 200px;
-  width: 1440px;
-  left: 0px;
-  border-radius: 0px;
-  position: absolute;
-  width: 1440px;
-  height: 200px;
-  left: 0px;
-  top: 2227px;
-  background: #E5E000;
-}
-.footer1 {
+.footer {
   display: flex;
-  position: absolute;
-  left: 80px;
-  top: 77px;
-  right: 1155px;
-  bottom: 77px;
-}
-.footer2 {
-  font-family: Helvetica;
-  font-size: 50px;
-  line-height: 57px;
-  letter-spacing: 0em;
-  text-align: right;
-  position: absolute;
-  width: 614px;
-  height: 64px;
-  font-size: 50px;
-  line-height: 57px;
-  align-items: center;
-  text-align: right;
-  color: #FFFFFF;
-  left: 746px;
-  right: 80px;
-  top: 70px;
-  bottom: 66px;
-}
-a:link {
-  color: blue;
-  text-decoration: none;
-}
-
-a:visited {
-  color: purple;
-}
-
-a:hover {
-  color: aqua;
-  text-decoration: underline;
-}
-
-a:active {
-  color: red;
-}
-a:visited:hover {
-  color: rgb(255, 166, 0);
-}
-a:visited:active {
-  color: red;
+  justify-content: space-between;
 }
