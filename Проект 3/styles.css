@@ -11,7 +11,7 @@
 }
  .img {
   height: 1080px;
-  background-image: url('file:///C:/Users/klevt/.vscode/MCS/Проект%203/image/img.png');
+  background-image: url('./image/img.png');
   background-size: cover;
  }
  .links {
@@ -20,10 +20,10 @@
 .links p {
   color: #ffffff;
 }
-.about {
+.land {
   padding: 105px 80px;
 }
-.about h2 {
+.land h2 {
   margin-bottom: 50px;
 }
 .footer {
