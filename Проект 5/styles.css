@@ -1,0 +1,123 @@
+.header { 
+     
+    background-color: #F8BFC7;
+    color: red;
+    
+}
+.notlinks {
+
+padding: 50px;
+font-family: Arial;
+font-size: 50px;
+font-weight: 400;
+line-height: 57px;
+
+}
+.links {
+
+}
+.links p {
+    padding: 25px;
+}
+.evian {
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    height: 950px;
+    background-image: url('./image/img.png');
+}
+.evian h1 {
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 100px;
+line-height: 115px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #E50043;
+}
+.about {
+    width: 1440px;
+}
+.first {
+display: flex;
+padding: 150px 199px 0 201px;
+}
+.first h3 {
+    font-family: Arial;
+font-size: 25px;
+line-height: 29px;
+letter-spacing: 0.05em;
+text-align: left;
+
+    border: 3px solid #F8BFC7;
+border-radius: 20px;
+}
+.second {
+    display: flex;
+    justify-content: space-between;
+}
+.second p {
+    display: flex;
+    font-family: Arial;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    align-self: flex-end;
+    
+}
+.third {
+    display: flex;
+    border: 3px solid #F8BFC7;
+    border-radius: 20px;
+}
+.bottle {
+    padding: 30px 30px 30px 80px;
+}
+.third h3 {
+    font-family: Arial;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding: 30px;    
+}
+.footer {
+    background: #F8BFC7;
+}
+.footer h3 {
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 50px;
+    color: #fff;     
+}
+a:link {
+    color: red;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: red;
+  }
+  
+  a:hover {
+    color: aqua;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: red;
+  }
+  a:visited:hover {
+    color: rgb(255, 166, 0);
+  }
+  a:visited:active {
+    color: red;
+  }
