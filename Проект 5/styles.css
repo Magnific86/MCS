@@ -1,11 +1,10 @@
 .header { 
-     
-    background-color: #F8BFC7;
-    color: red;
-    
+    display: flex;
+    background-color: #fff;
+    color: red; 
 }
 .notlinks {
-
+justify-content: flex-start;
 padding: 50px;
 font-family: Arial;
 font-size: 50px;
@@ -14,10 +13,13 @@ line-height: 57px;
 
 }
 .links {
-
-}
-.links p {
-    padding: 25px;
+justify-content: flex-end;
+margin-left: 780px;
+padding: 50px 25px 50px 25px;
+font-family: Arial;
+font-size: 50px;
+font-weight: 400;
+line-height: 57px;
 }
 .evian {
     display: flex;
@@ -27,52 +29,52 @@ line-height: 57px;
     background-image: url('./image/img.png');
 }
 .evian h1 {
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 100px;
-line-height: 115px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #E50043;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #E50043;
 }
 .about {
     width: 1440px;
 }
 .first {
-display: flex;
-padding: 150px 199px 0 201px;
+  padding: 150px 199px 0 201px;
+
 }
 .first h3 {
-    font-family: Arial;
+font-family: Arial;
 font-size: 25px;
 line-height: 29px;
 letter-spacing: 0.05em;
 text-align: left;
-
-    border: 3px solid #F8BFC7;
+padding: 30px;
+border: 3px solid #F8BFC7;
 border-radius: 20px;
 }
 .second {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 150px 199px 0 201px;
 }
+
 .second p {
-    display: flex;
+  margin-top: 48px;
     font-family: Arial;
     font-size: 25px;
     line-height: 29px;
-    letter-spacing: 0em;
-    text-align: center;
-    align-self: flex-end;
-    
+    letter-spacing: 0em; 
 }
 .third {
     display: flex;
     border: 3px solid #F8BFC7;
     border-radius: 20px;
+    margin: 150px;
 }
 .bottle {
     padding: 30px 30px 30px 80px;
