@@ -1,10 +1,12 @@
 body {
   padding: 0;
   margin: 0;
-  padding-top: 100px; 
+  padding-top: 100px;
 }
 .header { 
     position: fixed;
+    width: 100%;
+    justify-content: space-between;
     top: 0;
     left: 0;  
     display: flex;
@@ -22,7 +24,6 @@ line-height: 57px;
 }
 .links {
 justify-content: flex-end;
-margin-left: 780px;
 padding: 50px 25px 50px 25px;
 font-family: Arial;
 font-size: 50px;
@@ -32,9 +33,9 @@ line-height: 57px;
 .evian {
     display: flex;
     justify-content: center;
-    width: 1440px;
     height: 950px;
     background-image: url('./image/img.png');
+    background-size: cover;
 }
 .evian h1 {
   font-family: 'Arial';
@@ -48,11 +49,13 @@ line-height: 57px;
   color: #E50043;
 }
 .about {
-    width: 1440px;
+  width: 1040px;
+  margin: 0 auto;
 }
 .first {
-  padding: 150px 199px 0 201px;
-
+  padding: 30px;
+  border: 3px solid #F8BFC7;  
+  border-radius: 30px;
 }
 .first h3 {
 font-family: Arial;
@@ -60,19 +63,16 @@ font-size: 25px;
 line-height: 29px;
 letter-spacing: 0.05em;
 text-align: left;
-padding: 30px;
-border: 3px solid #F8BFC7;
-border-radius: 20px;
 }
 .second {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 150px 199px 0 201px;
+  padding: 150px 0;
 }
 
 .second p {
-  margin-top: 42px;
+    margin-top: 42px;
     font-family: Arial;
     font-size: 25px;
     line-height: 29px;
@@ -82,7 +82,7 @@ border-radius: 20px;
     display: flex;
     border: 3px solid #F8BFC7;
     border-radius: 20px;
-    margin: 150px;
+    margin: 150px 0;
 }
 .bottle {
     padding: 30px 30px 30px 80px;
@@ -106,6 +106,7 @@ border-radius: 20px;
     letter-spacing: 0em;
     text-align: left;
     padding: 50px;
+    margin: 0;
     color: #fff;     
 }
 a:link {
