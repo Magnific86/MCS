@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*для мобильных*/
+  @media only screen and (max-width: 390px) {}
+
+  /*для десктопов*/
+  @media only screen and (min-width: 391px) and (max-width: 1440px) {
+    .spec {
+        width: 50%;
+    }
+}
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .foothead {
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+  }
+  .header {
+    padding: 35px 0 36px 30px;
+    font-family: Helvetica;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  .footer {
+    padding: 32px 0 33px 30px;
+    font-family: Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 165px;
+    border: 5px solid #000000;
+    text-align: center;
+    margin: 20px 22px 20px 23px;
+    margin: 0 auto;
+  }
+  .section > p {
+    font-family: Helvetica;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
