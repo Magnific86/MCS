@@ -57,8 +57,7 @@
   /*для мобильных*/
   @media only screen and (max-width: 390px) {
     .about {
-     margin: 25px;
-     width: 45%;
+     
     }
    }
  
@@ -68,5 +67,7 @@
        width: 50%;
        display: flex;
        justify-content: space-around;
+       margin: 25px;
+     width: 45%;
      }
  }
