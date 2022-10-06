@@ -4,11 +4,14 @@
     box-sizing: border-box;
   }
   /*для мобильных*/
-  @media only screen and (max-width: 390px) {}
+  @media only screen and (max-width: 390px) {
+  
+  }
 
   /*для десктопов*/
   @media only screen and (min-width: 391px) and (max-width: 1440px) {
-    .spec {
+    .section {
+        margin-top: 20px;
         width: 50%;
     }
 }
@@ -40,7 +43,7 @@
     text-align: left;
     color: #fff;
   }
-  .section {
+  .border {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +53,8 @@
     text-align: center;
     margin: 20px 22px 20px 23px;
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .section > p {
     font-family: Helvetica;
