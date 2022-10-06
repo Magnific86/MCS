@@ -52,6 +52,7 @@
   .about {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   /*для мобильных*/
   @media only screen and (max-width: 390px) {
