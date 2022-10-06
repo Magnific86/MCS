@@ -3,17 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  /*для мобильных*/
-  @media only screen and (max-width: 390px) {
-  
-  }
-
-  /*для десктопов*/
-  @media only screen and (min-width: 391px) and (max-width: 1440px) {
-    .section {
-      width: 50%;
-    }
-}
   .page {
     width: 100%;
     display: flex;
@@ -65,3 +54,18 @@
     line-height: 29px;
     letter-spacing: 0em;
   }
+  /*для мобильных*/
+  @media only screen and (max-width: 390px) {
+    .about {
+     
+    }
+   }
+ 
+   /*для десктопов*/
+   @media only screen and (min-width: 391px) {
+     .about {
+       width: 50%;
+       display: flex;
+       justify-content: space-around;
+     }
+ }
