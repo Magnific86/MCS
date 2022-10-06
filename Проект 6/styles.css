@@ -4,12 +4,8 @@
     box-sizing: border-box;
   }
   .page {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-  }
-  .section {
-    width: 100%;
   }
   .foothead {
     height: 100px;
@@ -37,8 +33,7 @@
   }
   .border {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     width: 330px;
     height: 165px;
     border: 5px solid #000000;
@@ -54,20 +49,20 @@
     line-height: 29px;
     letter-spacing: 0em;
   }
+  .about {
+    margin: 0 auto;
+  }
   /*для мобильных*/
   @media only screen and (max-width: 390px) {
     .about {
-     
+     width: 100%;
     }
    }
  
    /*для десктопов*/
    @media only screen and (min-width: 391px) {
      .about {
-       width: 50%;
-       display: flex;
-       justify-content: space-around;
-       margin: 25px;
-     width: 45%;
+      margin: 25px;
+      width: 45%;
      }
  }
