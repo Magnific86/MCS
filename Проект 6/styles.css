@@ -55,14 +55,12 @@
   }
   /*для мобильных*/
   @media only screen and (max-width: 390px) {
-    .about {
-    width: 100%;
-    }
+  
    }
  
    /*для десктопов*/
    @media only screen and (min-width: 391px) {
-     .about {
+     .border {
       margin: 25px;
       width: 45%;
      }
