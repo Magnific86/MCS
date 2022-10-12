@@ -24,42 +24,41 @@ letter-spacing: 0em;
 padding: 52px 0 51px 0;
 }
 .main {
-flex-wrap: wrap;
 display: flex;
-align-items: center;
+align-items: flex-start;
 justify-content: center;
 }
 .column {
-    width: 400px;
+    vertical-align: top;    
+    width: 30%;
     border: 1px solid #000000;
     margin: 25px;
     padding: 30px;
 }
-
-/* Макет для мобильных */
-@media only screen and (max-width: 415px) {
-    body {
-        width: 33.3%;
-    }
+.column img {
+    border-style: none;
+    width: 100%;
+}
+.column h3 {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 30px 0 0 33px;
+}
+.column p {
+font-family: 'Times New Roman';
+font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+padding: 33px;
+}
+@media only screen  and (max-width: 400px) {
     .main {
-        margin: 0 auto;
-        padding: 0px;
+        width: 50%;
     }
-    .header {
-        height: auto;
-      }
-  }
-  
-  /* Макет для планшетов */
-  @media only screen and (min-width: 416px) and (max-width: 960px) {
-    .main {
-        width: 100%;
-    }
-  }
-  
-  /* Макет для десктопов */
-  @media only screen and (min-width: 961px) {
-    .main {
-        width: 100%;
-    }
-  }
+}
