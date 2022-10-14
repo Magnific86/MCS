@@ -57,6 +57,7 @@ a {
   display: flex;
   flex-direction: column;
     background-image: url('./images/delivery.jpg');
+    background-size: cover;
   }
   
  form {
@@ -164,7 +165,7 @@ font-family: "Helvetica";
   }
   /*Десктоп*/
   @media only screen and (min-width: 700px) {
-.arcticle {
+article {
 display: flex;
 justify-content: right;
 }
@@ -186,7 +187,11 @@ header li {
   }
   /*Мобильная*/
   @media only screen and (max-width: 400px) {
-  header {
+  article {
+    background-size: contain;
+    width: 70vh;
+  }
+    header {
     width: 100%;
   }
   header li {
