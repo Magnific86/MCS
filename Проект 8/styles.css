@@ -50,18 +50,13 @@ a {
   article {
     width: 100%;
     flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url('./images/delivery.jpg');
     background-size: cover;
   }
-  .spec-form {
- display: flex;
- justify-content: right;
-  }
  form {
-    display: flex;
-    flex-direction: column;
     margin-top: 50px;
     width: 60%;
   }
@@ -125,7 +120,6 @@ flex-direction: column;
   }
   .legacy-form-row {
     border: none;
-    width: 100vh;
   }
   .legacy-form-row .radio-label {
     display: inline;
@@ -138,7 +132,6 @@ flex-direction: column;
 }
   .form-row select {
     width: 70%;
-    
   }
   .form-row textarea {
     font-family: "Helvetica";
@@ -175,7 +168,12 @@ font-family: "Helvetica";
   }
   /*Десктоп*/
   @media only screen and (min-width: 700px) {
+    form {
+      width: 30%;
+      align-self: flex-end;
+    }
 article {
+  padding-right: 40px;
   width: 100%;
 display: flex;
 }
@@ -190,20 +188,22 @@ font-weight: 800;
   
 }
 .legacy-form-row {
-  position: relative;
+  display: flex;
+}
+.q {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
 }
 .legacy-form-row .radio-label {
   font-size: 20px;
   color: #fff;
-  padding:10px 10px 10px 20px;
   text-align: center;
 }
 .legacy-form-row input[type="radio"] {
-  position: absolute;
   width: 25px;
   height: 25px;
-  margin: 10px 0 10px -5px;
-  float: left;
+  margin-right: 10px;
 }
 .but button {
   width: 300px;
@@ -213,10 +213,9 @@ button h3 {
   font-size: 20px;
 }
 .border2 {
-  width: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: flex-end;
 }
 header li {
   padding: 0 15px 0 15px;
@@ -233,14 +232,18 @@ header li {
 
 }
   }
+  @media (min-width:701px) and (max-width: 1000px) {
+    form {
+      width: 45%;
+    }
+      }
   /*Мобильная*/
   @media only screen and (max-width: 400px) {
-  html,body {
-    width: auto;
-    height: 100vh;
-  }
+    body {
+      height: 100vh;
+    }
     article {
-      
+      background-position: center;
     background-size: contain;
     width: 100%;
   }
