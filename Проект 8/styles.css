@@ -34,6 +34,7 @@ text-align: left;
 margin: 5px 5px 5px 10px;
   }
   footer {
+    background-color: #F8BFC7;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -72,6 +73,7 @@ a {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    padding-left: 50px;
   }
   form h1 {
     font-family: Helvetica;
@@ -168,10 +170,29 @@ font-family: "Helvetica";
   @media only screen and (min-width: 700px) {
 article {
 display: flex;
-justify-content: right;
+}
+article h1 {
+  line-height: 40px;
+  font-size: 40px;
+  font-weight: 1000;
+}
+article h3 {
+  font-size: 30px;
+font-weight: 800;
+  
+}
+.but button {
+  width: 300px;
+  height: 60px;
+}
+button h3 {
+  font-size: 20px;
 }
     .border2 {
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
 }
 header li {
   padding: 0 15px 0 15px;
@@ -183,17 +204,22 @@ header li {
   width: 40%;
 }
 .form-row textarea {
-  width: 40%;
+  width: 70%;
+  height: 10vh;
+
 }
   }
   /*Мобильная*/
   @media only screen and (max-width: 400px) {
-  article {
+  html,body {
+    height: 100%;
+  }
+    article {
     background-size: contain;
     width: 70vh;
   }
     header {
-    width: 100%;
+    width: 100vh;
   }
   header li {
     font-family: 'Helvetica';
@@ -216,5 +242,8 @@ padding-top: 5px;
     width: 100px;
     padding: 7px;
     font-size: 14px;
+  }
+  footer {
+    width: 100vh;
   }
 }
