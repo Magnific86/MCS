@@ -71,6 +71,7 @@ a {
     border: 3px solid gold;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
   }
   form h1 {
     font-family: Helvetica;
