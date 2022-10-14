@@ -3,11 +3,8 @@
     padding: 0;
     box-sizing: border-box;
   }
-  html,
-  body {
-    height: 100%;
-  }
   .page {
+    width: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -15,23 +12,20 @@
   header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     color: #fff;
     font-family: Helvetica;
-font-size: 20px;
-letter-spacing: 0em;
-text-align: left;
-padding: 25px 35px 25px 0;
+    font-size: 20px;
+    letter-spacing: 0em;
+    padding: 25px 35px 25px 0;
   }
   header ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-margin: 5px 5px 5px 10px;
+    margin: 5px 5px 5px 10px;
   }
   header p {
-text-align: left;
-margin: 5px 5px 5px 10px;
+    margin: 5px 5px 5px 10px;
   }
   footer {
     background-color: #F8BFC7;
@@ -54,13 +48,17 @@ a {
     color: #fff;
   }
   article {
+    width: 100%;
     flex: 1 1 auto;
   display: flex;
   flex-direction: column;
     background-image: url('./images/delivery.jpg');
     background-size: cover;
   }
-  
+  .spec-form {
+ display: flex;
+ justify-content: right;
+  }
  form {
     display: flex;
     flex-direction: column;
@@ -105,6 +103,7 @@ flex-direction: column;
     border-style: none;
     background-color: transparent;
     border-bottom: 1px solid #fff;
+    outline: none;
   }
   .form-row input:focus {
     border-style: none;
@@ -139,6 +138,7 @@ flex-direction: column;
 }
   .form-row select {
     width: 70%;
+    
   }
   .form-row textarea {
     font-family: "Helvetica";
@@ -149,6 +149,7 @@ flex-direction: column;
     margin-bottom: 10px;
     padding: 7px;
     width: 70%;
+    outline: none;
   }
   .form-row button:hover {
     background-color: #F8BFC7;
@@ -175,6 +176,7 @@ font-family: "Helvetica";
   /*Десктоп*/
   @media only screen and (min-width: 700px) {
 article {
+  width: 100%;
 display: flex;
 }
 article h1 {
@@ -210,10 +212,11 @@ font-weight: 800;
 button h3 {
   font-size: 20px;
 }
-    .border2 {
+.border2 {
   width: 45%;
   display: flex;
   flex-direction: column;
+  justify-content: right;
 }
 header li {
   padding: 0 15px 0 15px;
@@ -233,14 +236,13 @@ header li {
   /*Мобильная*/
   @media only screen and (max-width: 400px) {
   html,body {
-    height: 100%;
+    width: auto;
+    height: 100vh;
   }
     article {
+      
     background-size: contain;
-    width: 70vh;
-  }
-    header {
-    width: 100vh;
+    width: 100%;
   }
   header li {
     font-family: 'Helvetica';
@@ -265,6 +267,6 @@ padding-top: 5px;
     font-size: 14px;
   }
   footer {
-    width: 100vh;
+    width: 100%;
   }
 }
