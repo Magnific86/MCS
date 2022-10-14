@@ -102,7 +102,14 @@ flex-direction: column;
     width: 70%;
     padding: 7px;
     font-size: 14px;
-border-style: none;
+    border-style: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+  }
+  .form-row input:focus {
+    border-style: none;
+    background-color: transparent;
+    border-bottom: 1px solid red
   }
   .form-row input[type="text"]:invalid,
   .form-row input[type="email"]:invalid {
@@ -115,12 +122,11 @@ border-style: none;
     font-family: 'Helvetica';
     font-size: 14px;
     padding: 7px;
-    resize: none;
     color: #fff;
   }
   .legacy-form-row {
     border: none;
-    margin-bottom: 15px;
+    width: 100vh;
   }
   .legacy-form-row .radio-label {
     display: inline;
@@ -181,6 +187,22 @@ article h3 {
 font-weight: 800;
   
 }
+.legacy-form-row {
+  position: relative;
+}
+.legacy-form-row .radio-label {
+  font-size: 20px;
+  color: #fff;
+  padding:10px 10px 10px 20px;
+  text-align: center;
+}
+.legacy-form-row input[type="radio"] {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin: 10px 0 10px -5px;
+  float: left;
+}
 .but button {
   width: 300px;
   height: 60px;
@@ -192,7 +214,6 @@ button h3 {
   width: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: right;
 }
 header li {
   padding: 0 15px 0 15px;
