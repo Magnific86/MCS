@@ -74,6 +74,9 @@
   background-color: #fff;
   margin: 0 auto;
 }
+.page .main section {
+  display: flex;
+}
 .page .main .main-section {
   display: flex;
   flex-direction: column;

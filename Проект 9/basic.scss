@@ -73,7 +73,7 @@
         background-color: #fff;
         margin: 0 auto;
         section {
-        
+        display: flex;
         }
         .main-section {
             display: flex;
@@ -138,6 +138,5 @@
             display: flex;
             flex-wrap: wrap;
         }
-
     }
 }
