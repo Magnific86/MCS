@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Unifactur";
+  src: url("unifactur.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: black;
+}
+.page header {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+.page header .section-header-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fff;
+}
+.page header .section-header-1 ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+}
+.page header .section-header-1 ul li {
+  padding: 20px;
+}
+.page header .section-header-1 .click {
+  position: relative;
+  z-index: 2;
+}
+.page header .section-header-1 .click:hover .header-lupa {
+  position: absolute;
+  display: block;
+}
+.page header .section-header-1 .header-lupa {
+  z-index: 1;
+}
+.page header .section-header-nav {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+.page header .section-header-nav .nav {
+  width: 100%;
+  background-color: azure;
+}
+.page header .section-header-nav .nav textarea {
+  width: 100%;
+  border-style: none;
+  height: 100%;
+  outline: none;
+}
+.page header .section-header-nav .nav-right {
+  color: #fff;
+}
+.page .main {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.page .main .main-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 1em;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  border: 3px solid black;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  min-height: 200px;
+}
+.page .main .sec-section {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 1em;
+  align-items: center;
+  border: 3px solid black;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.page .main .sec-section .left {
+  min-height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.page .main .sec-section .right-aside {
+  min-height: 100%;
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.page .main .sec-section .right-aside .pod {
+  width: 40%;
+  height: 50%;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+}
+.page footer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.page footer .hard {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
