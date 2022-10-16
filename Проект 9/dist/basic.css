@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Unifactur";
   src: url("unifactur.woff") format("woff");
-  font-style: normal;
-  font-weight: 300;
 }
 * {
   margin: 0;
@@ -76,6 +74,7 @@
 }
 .page .main section {
   display: flex;
+  border-radius: 10px;
 }
 .page .main .main-section {
   display: flex;
@@ -85,11 +84,13 @@
   align-items: center;
   justify-content: space-around;
   width: 80%;
-  border: 3px solid black;
+  border: 3px solid brown;
   display: flex;
   margin: 0 auto;
   margin-bottom: 1em;
   min-height: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .page .main .sec-section {
   display: flex;
@@ -99,29 +100,29 @@
   flex-direction: row;
   text-align: center;
   margin-top: 1em;
-  align-items: center;
   border: 3px solid black;
   margin: 0 auto;
-  margin-bottom: 1em;
+  align-items: center;
+  margin-bottom: 80px;
 }
 .page .main .sec-section .left {
-  min-height: 100%;
   width: 40%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  text-align: left;
+  padding: 25px;
 }
 .page .main .sec-section .right-aside {
-  min-height: 100%;
   display: flex;
   width: 60%;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 }
 .page .main .sec-section .right-aside .pod {
   width: 40%;
   height: 50%;
-  border: 3px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -129,14 +130,32 @@
 }
 .page footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100%;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  justify-content: space-between;
+  color: #fff;
 }
 .page footer .hard {
-  color: #fff;
+  height: 100%;
+  display: flex;
+  font-size: 15px;
+  margin: 25px;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.page footer .hard .un {
   display: flex;
   flex-wrap: wrap;
+}
+.page footer .border-top {
+  display: flex;
+  border-top: 3px solid #fff;
+  width: 80%;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+.page footer .border-top h6 {
+  margin-left: 30px;
+  margin-bottom: 100px;
 }
